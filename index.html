@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namoz Vaqtlari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Namoz Vaqtlari</h1>
+        <div class="select-container">
+            <label for="region">Viloyatni tanlang:</label>
+            <select id="region" onchange="fetchPrayerTimes()">
+                <option value="Toshkent">Toshkent</option>
+                <option value="Andijon">Andijon</option>
+                <option value="Buxoro">Buxoro</option>
+                <option value="Fargona">Farg'ona</option>
+                <option value="Jizzax">Jizzax</option>
+                <option value="Namangan">Namangan</option>
+                <option value="Navoiy">Navoiy</option>
+                <option value="Qashqadaryo">Qashqadaryo</option>
+                <option value="Samarqand">Samarqand</option>
+                <option value="Sirdaryo">Sirdaryo</option>
+                <option value="Surxondaryo">Surxondaryo</option>
+                <option value="Xorazm">Xorazm</option>
+                <option value="Qoraqalpogiston">Qoraqalpog'iston</option>
+            </select>
+        </div>
+        <div id="prayer-times" class="prayer-times">
+            <div class="card"><h3>Tong Saharlik</h3><p id="bomdod">--:--</p></div>
+            <div class="card"><h3>Quyosh</h3><p id="quyosh">--:--</p></div>
+            <div class="card"><h3>Peshin</h3><p id="peshin">--:--</p></div>
+            <div class="card"><h3>Asr</h3><p id="asr">--:--</p></div>
+            <div class="card"><h3>Shom Iftor</h3><p id="shom">--:--</p></div>
+            <div class="card"><h3>Hufton</h3><p id="xufton">--:--</p></div>
+        </div>
+        <p id="date"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
